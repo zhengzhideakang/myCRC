@@ -19,7 +19,7 @@ class CRCConfig:
     width: int = 16         # CRC宽度，默认值为 16
     poly: int = 0x8005      # CRC生成多项式，默认值为 CRC-16/MODBUS
     reflect_in: bool = True  # 输入反转标志，默认反转
-    xor_in: int = 0x0000    # 输入异或值，默认值为 0xFFFF
+    xor_in: int = 0x0000    # 输入异或值，默认值为 0x0000
     reflect_out: bool = True  # 输出反转标志，默认反转
     xor_out: int = 0x0000   # 输出异或值，默认值为 0x0000
 

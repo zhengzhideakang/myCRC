@@ -30,7 +30,7 @@
 module myCrcMultiStep
 #(
   parameter DIN_WIDTH = 32, // 输入数据位宽, 取值范围为8的倍数: 如8, 16, 32, ...
-  // 最后一段的有效数据位宽, 高位为有效数据, 它必须是8的倍数, 最小值为8, 最大值为DIN_WIDTH
+  // 最后一段的有效数据位宽，其值为 8 的倍数，且最小值为 8，最大值为 DIN_WIDTH，高位为有效数据
   parameter LAST_DIN_WIDTH = DIN_WIDTH,
   parameter WIDTH = 16,                // CRC宽度, 取值范围4~64
   parameter [0:0] REFLECT_IN = 1,      // 输入是否翻转, 取值范围0或1, 1表示反转, 0表示不反转
